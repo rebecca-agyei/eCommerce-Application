@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+<body>
+    <div class="topbar">
+        <p>ENTER A COUPON CODE AND GET 50% DISCOUNT ON ALL PRODUCTS! SHOP NOW></p>     
+    </div>
+    <div class="nextbar">
+      <div class="main-nav">
+        <a href="#new">NEW</a>
+        <a href="#men">MEN</a>
+        <a href="#women">WOMEN</a>
+        <a href="#boys">BOYS</a>
+        <a href="#girls">GIRLS</a>
+        <a href="#more">MORE SIZES</a>
+        <a href="#ties">TIES</a>
+        <a href="#sale">SALE</a>
+        <a href="#story">OUR STORY</a>
+      </div>
+      <div id="search" class="search">
+        <input id="input" type="text" placeholder="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    </div>
+    <div class="wrapper">
+        <div class="main-container">
+            <div class="left-container">
+                <div>
+                    <img id="pic1" src="images/frost shirt back.jpg" alt="">
+                </div>
+                <div>
+                    <img id="pic2" src="images/frost shirt.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="mid-container">
+                <div>
+                    <img id="img1" src="images/frost shirt back.jpg" alt="">
+                </div>
+                <div>
+                    <img id="img2" src="images/frost shirt.jpg" alt="">
+                </div>
+                <!-- <div>
+                    <img id="img3" src="images/shirt back.jpg" alt="">
+                </div> -->
+
+            </div>
+            
+            <div class="right-container">
+                <h2>Boys' Stillwater Sherpa 1/4-Zip</h2>
+
+                <!-- Star icons -->
+                <div class="reviews">
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star-half-alt"></div>
+                    <a href="#" id="review">
+                        <p>30 reviews</p>
+                    </a>
+                </div>
+                <div class="shipping-info">
+                    <p>FREE GROUND SHIPPING <a href="" id="ord">on all orders above $125</a> </p>
+                </div>
+                <div class="price">
+                    <p id="newprice">$<d id="price">48.99</d>
+                    </p>
+                </div>
+                <div class="color">
+                    <p> <strong>Color</strong>: Camel </p>
+                </div>
+                <div class="color-circle">
+                </div> <br>
+                <div class="size">
+                    <p><strong>Size</strong> : <d id="displaysize"></d> <a href="" id="size">Size chart </a> </p>
+                </div>
+
+                <div class="size-selct">
+                    <div class="size-value" >2T</div>
+                    <div class="size-value">3T</div>
+                    <div class="size-value" >4T</div>
+                    <div class="size-value" >5</div>
+                    <div class="size-value" >6</div>
+                    <div class="size-value" >7</div>
+                    <div class="size-value" >S</div>
+                    <div class="size-value" >M</div>
+                    <div class="size-value">L</div>
+                    <div class="size-value" >XL</div>
+                </div> <br>
+
+                <label for="Quantity" id="choose"><strong>Choose your Quantity</strong>:<d id="displayqty"></d></label>
+                <br>
+
+                <div class="increments">
+
+                    <select id="qty">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+
+                </div> <br>
+
+                <div class="add-to">
+                    <h3> <a id="bag">ADD TO BAG </a></h3>
+                </div>
+                <div class="buy">
+                    <p> <strong>Buy online, free in-store pickup</strong> </p>
+                    <p id="get"> Get it at a store near you. <a href="">Choose store</a> </p>
+                </div>
+            </div>
+        </div>
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js" charset="utf-8"></script>
+     
+</body>
+</html>

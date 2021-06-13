@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+
+.topbar {
+    background-color: #002B5C;
+    overflow: hidden;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding: 15px;
+}
+
+.topbar p{
+    color: white;
+    font-size: 0.938rem;
+    font-family: "Nunito Sans Bold", sans-serif;
+    display: inline;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nextbar {
+    background-color: RGBA(101,227,233,1);
+    height: 5rem;
+    position: relative;
+}
+
+.main-nav {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    bottom: 0px;
+    position: absolute;
+  }
+  
+  .main-nav a {
+    float: left;
+    color: #002B5C;
+    font-weight: bolder;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 0.938rem;
+  }
+  
+  .main-nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .search,#search{      
+    font-weight: lighter;
+    padding-bottom: 0vw;
+    font-size: 1.2vw;
+    margin-left: 80vw;
+    bottom: 10px;  
+    position: absolute;    
+}
+
+#input{
+    margin-right: 0vw;
+    font-size:1vw ;
+    border: 1px solid; 
+    padding: 0.313rem;
+}
+
+.search>i{
+    margin-left: 0vw;
+    padding-left: 0vw;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 0.4fr 2fr 1.5fr; 
+}
+
+.left-container img {
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 45%;
+    border: 1px solid #cecece;
+}
+.left-container img:hover{
+    border: 2px solid black;
+    cursor: pointer;
+}
+.mid-container{
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+}
+.mid-container img {
+    width: 90%;
+    height: 600px;
+    padding: 20px;
+    
+}
+.right-container{
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-bottom: 35px;
+}
+.right-container h2{
+    margin-bottom: 10px;
+    font-family:'Montserrat', sans-serif;
+}
+.reviews{
+    color: #1176bb;
+    margin-bottom: 10px;
+}
+#review{
+    display: inline-block;
+    text-decoration: none;
+}
+.color-circle{
+    width: 35px;
+    height: 35px;
+    background-color: bisque;
+    border: 2px solid #282846;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.shipping-info {
+    color: red;
+    margin-bottom: 10px;
+}
+#ord {
+    text-decoration: none;
+    color: black;
+}
+.price{
+    margin-bottom: 10px;
+}
+
+.color{
+    margin-bottom: 10px;
+}
+
+#size{
+    padding-left: 25px;
+    color: black;
+}
+.size-selct{
+    margin-top: 15px;
+    display: grid;
+    grid-template: repeat(2,45px)/repeat(8,45px);
+    gap: 5px; 
+}
+
+.size-selct >div{
+    display: grid;
+    text-align: center;
+    place-items: center;
+    background-color : whitesmoke;
+    cursor: pointer;
+}
+.size-selct >div:hover{
+    background-color: #1176bb;
+   
+}
+size-selct >div:active{
+    background-color: #002b5c;
+}
+
+.increments{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+label {
+    font-size: 1rem;
+    padding-right: 10px;
+  }
+  
+ #qty {
+      display:list-item;
+     font-size: 0.9rem;
+     margin-left: 1rem;
+     padding: 2px 5px;
+  }
+
+ .step {
+    font-size: 25px;    
+    font-weight: 100;
+    color: #002b5c;
+    border: 1px solid #002b5c;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    place-items: center;
+    margin-right: 5px;
+}
+.qnt{
+    margin-right: 10px;
+    border: 1px solid #002b5c;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.add-to{
+    text-align: center;
+    padding: 20px;
+    width: 350px;
+    border-radius: 2px;
+    background-color:#002b5c;
+    color: white;
+    margin-bottom: 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.add-to a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.buy{
+    text-align: center;
+    padding: 10px;
+    width: 370px;
+    border-radius: 2px;
+    background-color: white;
+    color: #002b5c;
+    border: 1px solid #002b5c;
+    cursor: pointer;
+}
+.buy p{
+    font-size: 20px;
+}
+.buy a{
+    color: blue;
+}
+#get{
+    font-size: 12px;
+}
+
+#img1{
+    position: absolute;
+
+}
+#img2{
+    position: absolute;
+    visibility: hidden;
+}
