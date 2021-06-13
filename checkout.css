@@ -50,6 +50,22 @@
     border: 2px solid;
 }
 
+.shop-more{
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    border-radius: 2px;
+    background-color:rgb(83, 139, 46);
+    color: white;
+    margin-bottom: 15px;
+    margin-left: 470px;
+}
+
+.shop-more a {
+    text-decoration: none;
+    color: white;
+}
+
 .pay{
     text-align: center;
     padding: 20px;
