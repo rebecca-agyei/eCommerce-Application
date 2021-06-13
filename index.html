@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://use.fontawesome.com/942a7b4aee.js"></script>
+  </head>
 <body>
     <div class="topbar">
         <p>ENTER A COUPON CODE AND GET 50% DISCOUNT ON ALL PRODUCTS! SHOP NOW></p>     
@@ -36,54 +37,54 @@
         <div class="main-container">
             <div class="left-container">
                 <div>
-                    <img id="pic1" src="images/frost shirt back.jpg" alt="">
+                    <img id="pic1" src="images/shirt back.jpg" alt="">
                 </div>
                 <div>
-                    <img id="pic2" src="images/frost shirt.jpg" alt="">
+                    <img id="pic2" src="images/shirt.jpg" alt="">
                 </div>
+                <div class="social-icons">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    <i class="fa fa-pinterest" aria-hidden="true"></i>         
+                </div>  
 
             </div>
             <div class="mid-container">
                 <div>
-                    <img id="img1" src="images/frost shirt back.jpg" alt="">
+                    <img id="img1" src="images/shirt back.jpg" alt="">
                 </div>
                 <div>
-                    <img id="img2" src="images/frost shirt.jpg" alt="">
+                    <img id="img2" src="images/shirt.jpg" alt="">
                 </div>
-                <!-- <div>
-                    <img id="img3" src="images/shirt back.jpg" alt="">
-                </div> -->
-
             </div>
             
             <div class="right-container">
-                <h2>Boys' Stillwater Sherpa 1/4-Zip</h2>
+                <h2>Harbor Fleece Shep Shirt</h2>
 
-                <!-- Star icons -->
                 <div class="reviews">
                     <div class="fas fa-star"></div>
                     <div class="fas fa-star"></div>
                     <div class="fas fa-star"></div>
                     <div class="fas fa-star"></div>
-                    <div class="fas fa-star-half-alt"></div>
+                    <div class="fas fa-star"></div>
                     <a href="#" id="review">
-                        <p>30 reviews</p>
+                        <p>500 reviews</p>
                     </a>
                 </div>
-                <div class="shipping-info">
-                    <p>FREE GROUND SHIPPING <a href="" id="ord">on all orders above $125</a> </p>
-                </div>
                 <div class="price">
-                    <p id="newprice">$<d id="price">48.99</d>
+                    <p id="newprice">$<d id="price">100</d>
                     </p>
                 </div>
                 <div class="color">
-                    <p> <strong>Color</strong>: Camel </p>
+                    <p> <strong>Color</strong>: Frost </p>
                 </div>
                 <div class="color-circle">
                 </div> <br>
                 <div class="size">
-                    <p><strong>Size</strong> : <d id="displaysize"></d> <a href="" id="size">Size chart </a> </p>
+                    <p><strong>Size</strong> : <d id="displaysize"></d> </p>
                 </div>
 
                 <div class="size-selct">
@@ -110,11 +111,6 @@
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
                     </select>
 
                 </div> <br>
@@ -127,10 +123,45 @@
                     <p id="get"> Get it at a store near you. <a href="">Choose store</a> </p>
                 </div>
             </div>
+
         </div>
+    </div>
+
+        <div class="add-popup">
+          <div class="items">
+              <h2>Items added to cart <a id="items">&times</a></h2>
+          </div>
+          <div class="popup-info">
+              <div class="img">
+                  <img src="images/shirt.jpg" alt="">
+              </div>
+              <div class="desc">
+                  <p> <strong> Harbor Fleece Shep Shirt</strong> </p> <br>
+                  <p id="newprice">$<d id="pop-price">0</d</p> <br>
+                          <p>Vineyard Navy / <d id="displaysize"></d> </p> <br>
+                          <p> Quantity :<d id="disp-qty"></d>
+                          </p> <br>
+                          <p><a href="">$195.96</a></p> <br>
+              </div>
+          </div>
+          <hr>
+          <div class="subtotal">
+              <h4>CART SUBTOTAL : <span id="subprice">$195.96</span> </h4>
+          </div>
+  
+          <div class="to-checkout">
+              <div class="checkk">
+                  <h3> <a href="checkout.html">CHECKOUT</a> </h3>
+              </div>
+              <div class="shopp">
+                  <p> <strong>CONTINUE SHOPPING</strong> </p>
+                  <p id="get"> <a href="index.html">return to store</a> </p>
+              </div>
+          </div>
  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="script.js" charset="utf-8"></script>
+
      
 </body>
 </html>

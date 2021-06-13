@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://use.fontawesome.com/942a7b4aee.js"></script>
+</head>
+
+<body>         
+    <div class="topbar">
+        <p>ENTER A COUPON CODE AND GET 50% DISCOUNT ON ALL PRODUCTS! SHOP NOW></p>     
+    </div>
+    <div class="nextbar">
+      <div class="main-nav">
+        <a href="#new">NEW</a>
+        <a href="#men">MEN</a>
+        <a href="#women">WOMEN</a>
+        <a href="#boys">BOYS</a>
+        <a href="#girls">GIRLS</a>
+        <a href="#more">MORE SIZES</a>
+        <a href="#ties">TIES</a>
+        <a href="#sale">SALE</a>
+        <a href="#story">OUR STORY</a>
+      </div>
+      <div id="search" class="search">
+        <input id="input" type="text" placeholder="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    </div>
+
+        <div class="payment">
+                <div class="payment-img">         
+                <img src="images/shirt.jpg" alt="">
+                <h3>Boys' Stillwater Sherpa 1/4-Zip</h3>
+                <p>Color :  </p>
+                <p>Size : <d id="displayqty"></d></p>
+                <h3>Quantity:<d id="displayqty">4</d></h3>
+                <h3>Total Price: $200</h3> <br>
+            </div>
+
+
+                <!-- Shipping and Payment Info form -->
+                <div class="form">
+                    <!-- <h2 id="address">Shipping Address</h2> -->
+                    <form class="shipping-form">
+                    <h2 id="address">Shipping Address</h2>
+                    <div class="name">
+                        <div class="form-col">
+                            <label for="">First Name</label><br> 
+                            <input class="s-input" type="text" required>
+                        </div>
+                        
+                        <div>
+                            <label for="">Last Name</label><br>
+                            <input class="s-input" type="text" required> 
+                        </div>
+                    </div>
+                        <div class="address">
+                            <label for="">Address</label><br> 
+                            <input class="text-input" type="text">
+                        </div>
+                        
+                        <div class="address">
+                            <label for=""></label><br> 
+                            <input class="full-input" type="text">
+                        </div>
+                        <div class="address">
+                            <label for="">City</label><br> 
+                            <input class="text" type="text">
+
+                    </div>
+                    <!-- Countries  and zip code-->
+                    <div class="form-grid top-margin-1">
+                        <div class="form-column">
+                            <label for="">Country</label><br> 
+                            <select class="s-input" name="" id="">
+                                <option value="">USA</option>
+                                <option value="">China</option>
+                                <option value="">Canada</option>
+                                <option value="">UAE</option>
+                                <option value="">Ghana</option>
+                                <option value="">UK</option>
+                                <option value="">Norway</option>
+                            </select>
+                        </div>
+                        <!-- Zip code -->
+                        <div>
+                            <label for="">Zip Code</label><br>
+                            <input class="s-input" type="text"> 
+                        </div>
+                        
+                    </div>
+                    <!-- Phone number -->
+                        <div class="phone">
+                            <label for="">Phone</label><br> 
+                            <input class="s-input" type="text">
+                        </div>
+                    </form>
+                </div>
+                <div class="summary">
+                    <div class="order_summary">
+                        <h3>Order Summary</h3>
+                        <h5 id="s_Counter">1 items</h5>
+                    </div>
+                    <div  class="stotal">
+                       <div id="muv"><span>Sub-Total:</span><span  id="s_Total">000</span></div>
+                       <div><span>Tax:</span><span id="tax">000</span></div>
+                       <div><span>Estimated Total:</span ><span id="sEstimate">000</span></div>
+                    </div>
+            
+                    <div class="coupon">
+                        <input id="coupon_code" type="text" placeholder="Enter coupon code"> <button id="apply_coupon" onclick="applyCoupon()" class="coup_btn">Discount</button>
+                    </div>
+                    <div class="checkout">
+                        <button id="checkout_id" class="checkout">C H E C K O U T</button>
+                    </div>
+                    <h2>Or pay with:</h2>
+                    <div class="paypal">
+                        <button id="paypal_id" class="paypal">
+                            <i class="fa fa-paypal" aria-hidden="true"></i>PayPal
+                        </button>
+                    </div>
+                    <div class="amazon">
+                        <button id="amazon_id" class="amazon">
+                            <i class="fa fa-amazon" aria-hidden="true"></i>
+                                Pay
+                        </button>
+                    </div>
+                    </div>
+            </div>
+
+                <div class="pay">
+                <h3> <a href="#">CONFIRM PAYMENT</a> </h3>
+            </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/checkout.js" charset="utf-8"></script>
+</body>
+
+</html>

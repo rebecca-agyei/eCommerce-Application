@@ -1,3 +1,7 @@
+body{
+    background-color: #F5FEFD;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -111,7 +115,6 @@
 }
 .right-container h2{
     margin-bottom: 10px;
-    font-family:'Montserrat', sans-serif;
 }
 .reviews{
     color: #1176bb;
@@ -124,8 +127,8 @@
 .color-circle{
     width: 35px;
     height: 35px;
-    background-color: bisque;
-    border: 2px solid #282846;
+    background-color: #273248;
+    border: 2px solid #e6e5e0;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -251,4 +254,133 @@ label {
 #img2{
     position: absolute;
     visibility: hidden;
+}
+
+.add-popup{
+    width: 400px;
+    background-color: whitesmoke;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: none;
+}
+
+.items{
+    background-color:#002b5c ;
+    color: white;
+    width: auto;
+    text-align: center;
+    padding: 15px;
+}
+
+.items a {
+    cursor: pointer;
+    margin-left: 15px;
+}
+.popup-info{
+    display : grid; 
+    grid-template-columns: 0.5fr 0.5fr;
+    padding: 15px;
+}
+.img img {
+    width: 140px;
+}
+
+.to-checkout{
+    /* border: 1px solid yellow; */
+    margin: 15px;
+    padding: 20px;
+}
+.desc{
+    /* border: 1px solid red; */
+    width: auto;
+}
+
+#newprice {
+    color: green;
+}
+#oldprice{
+    font-size: 12px;
+    color: red;
+    text-decoration: line-through;
+}
+.subtotal{
+    margin: 15px;
+}
+.subtotal h4{
+    color: #002b5c;
+    padding: 20px;
+}
+#subprice{
+    margin-left: 50px;
+}
+
+.to-checkout a {
+    text-decoration: none;
+    color: white;
+}
+#get{
+    font-size: 12px;
+}
+.checkk{
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    border-radius: 2px;
+    background-color:#002b5c;
+    color: white;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.checkk a {
+    text-decoration: none;
+    color: white;
+}
+.shopp{
+    border: 1px solid yellow;
+    text-align: center;
+    padding: 10px;
+    width: 270px;
+    border-radius: 2px;
+    background-color: white;
+    color: #002b5c;
+    border: 1px solid #002b5c;
+    cursor: pointer;
+}
+.shopp p{
+    font-size: 20px;
+
+}
+.shopp a{
+    color: blue;
+}
+#Qty{
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid navy;  
+}
+
+#make{
+    grid-column: 1/5;
+    border-right: none; 
+}
+
+ .social-icons{
+    margin-top: 10px;
+} 
+
+.social-icons>i{
+    width: 3vw;
+    height:3vw ;
+    color: white;
+    background-color:rgba(0, 43, 92, 1) ;
+    border: solid 1px gray;
+    border-radius: 50%;
+    padding: 10px;
+    white-space: nowrap;
+    margin: 1.2vw;
 }
